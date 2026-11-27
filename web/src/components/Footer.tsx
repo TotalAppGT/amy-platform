@@ -24,6 +24,7 @@ const cols = [
   {
     title: "Legal",
     links: [
+      { label: "Centro de privacidad", href: "/privacidad" },
       { label: "Términos y condiciones", href: "/legal/terminos" },
       { label: "Política de privacidad", href: "/legal/privacidad" },
       { label: "Derechos de autor", href: "/legal/derechos-autor" },
@@ -43,7 +44,7 @@ export default function Footer() {
           <div>
             <Logo />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted">
-              La plataforma guatemalteca donde el talento se convierte en ingresos. Contenido, conversaciones y llamadas
+              La plataforma donde el talento se convierte en ingresos. Contenido, conversaciones y llamadas
               privadas con creadoras verificadas.
             </p>
             <div className="mt-6 flex items-center gap-2">
@@ -82,14 +83,14 @@ export default function Footer() {
 
         <div className="mt-7 flex flex-col gap-5 text-xs text-muted/70 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
-            <span>© 2026 AMY OFICIAL · Guatemala</span>
+            <span>© 2026 AMY OFICIAL · Global</span>
             <span className="hidden h-1 w-1 rounded-full bg-white/20 lg:block" />
             <a href="mailto:amyoficialfan@gmail.com" className="hover:text-cream">amyoficialfan@gmail.com</a>
             <span className="hidden h-1 w-1 rounded-full bg-white/20 lg:block" />
             <span>Hecho para creadoras y fans mayores de 18 años.</span>
           </div>
           <div className="flex flex-wrap items-center gap-2">
-            {["VISA", "Mastercard", "USDT", "Transferencia GTQ"].map((p) => (
+            {["VISA", "Mastercard", "USDT", "Transferencia"].map((p) => (
               <span key={p} className="rounded-md border border-white/10 bg-white/[0.03] px-2 py-1 text-[10px] tracking-wide text-muted">
                 {p}
               </span>

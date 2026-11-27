@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, BadgeCheck, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowLeft, ShieldCheck, Sparkles } from "lucide-react";
 import Logo from "./Logo";
 import Avatar from "./Avatar";
 
@@ -32,7 +32,7 @@ export default function AuthShell({
         </div>
 
         <p className="flex items-center justify-center gap-1.5 text-[10px] text-muted/50">
-          <ShieldCheck className="h-3 w-3" /> Sitio para mayores de 18 · Guatemala
+          <ShieldCheck className="h-3 w-3" /> Sitio para mayores de 18 · Global
         </p>
       </div>
 
@@ -43,7 +43,7 @@ export default function AuthShell({
 
         <div className="relative flex h-full flex-col justify-between p-12">
           <span className="eyebrow">
-            <Sparkles className="h-3.5 w-3.5 text-gold" /> AMY · Guatemala
+            <Sparkles className="h-3.5 w-3.5 text-gold" /> AMY · Global
           </span>
 
           <div className="max-w-md">
@@ -59,16 +59,21 @@ export default function AuthShell({
 
             <div className="mt-8 space-y-3">
               {[
-                "Creadoras verificadas con documento y selfie.",
-                "Pagos en GTQ, tarjeta o cripto según disponibilidad.",
-                "Chat, propinas y llamadas con cobro por minuto.",
+                "Alias público: tu nombre real nunca se muestra.",
+                "Datos cifrados, minimizados y nunca se venden.",
+                "Modo discreto: tú controlas qué se ve y qué no.",
+                "Puedes exportar o eliminar tus datos cuando quieras.",
               ].map((t) => (
                 <div key={t} className="flex items-start gap-2.5 text-[13px] text-cream/70">
-                  <BadgeCheck className="mt-0.5 h-4 w-4 shrink-0 text-rose" />
+                  <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-rose" />
                   {t}
                 </div>
               ))}
             </div>
+
+            <Link href="/privacidad" className="mt-5 inline-flex items-center gap-1 text-[11px] font-medium text-rose hover:text-blush">
+              Conoce el centro de privacidad →
+            </Link>
           </div>
 
           <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-black/25 p-4 backdrop-blur">

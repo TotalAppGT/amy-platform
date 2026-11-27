@@ -121,7 +121,7 @@ export default function ExploreClient() {
           Encuentra tu próxima <span className="italic text-rose">conexión</span>.
         </h1>
         <p className="mt-4 max-w-lg text-sm leading-relaxed text-muted">
-          Creadoras verificadas de Guatemala y la región. Filtra por categoría, disponibilidad y presupuesto.
+          Creadoras verificadas de Latinoamérica y el mundo. Filtra por categoría, disponibilidad y presupuesto.
         </p>
       </div>
 

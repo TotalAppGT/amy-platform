@@ -58,7 +58,7 @@ export default function AdminDashboard() {
     >
       <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="text-[11px] uppercase tracking-[0.2em] text-muted">Operación · Guatemala</p>
+          <p className="text-[11px] uppercase tracking-[0.2em] text-muted">Operación · Global</p>
           <h1 className="display mt-1 text-3xl sm:text-4xl">Panel de administración</h1>
           <p className="mt-1.5 text-sm text-muted">Dinero, personas y contenido bajo control.</p>
         </div>

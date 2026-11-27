@@ -104,7 +104,7 @@ function TrustStrip() {
     { icon: ShieldCheck, title: "Edad verificada", text: "KYC con documento para cada creadora" },
     { icon: Lock, title: "Pago protegido", text: "Saldo en wallet y cobros por minuto" },
     { icon: BadgeCheck, title: "Consentimiento", text: "Registro por contenido y takedown" },
-    { icon: Headphones, title: "Soporte real", text: "Equipo en Guatemala, 7 días" },
+    { icon: Headphones, title: "Soporte real", text: "Equipo regional, 7 días" },
   ];
   return (
     <section className="border-y border-white/[0.06] bg-white/[0.015]">
@@ -308,7 +308,7 @@ export default function HomePage() {
           <div className="relative z-10">
             <span className="eyebrow">
               <Sparkles className="h-3.5 w-3.5 text-gold" />
-              Hecho en Guatemala · Solo +18
+              Sin fronteras · Solo +18
             </span>
 
             <h1 className="display mt-4 text-[46px] leading-[0.98] sm:text-[72px] lg:text-[80px]">
@@ -318,8 +318,8 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-6 max-w-md text-[15px] leading-relaxed text-cream/65">
-              Contenido exclusivo, conversaciones reales y llamadas privadas con creadoras verificadas de Guatemala.
-              Tú decides cuánto compartir. Nosotros ponemos la tecnología, los pagos y la discreción.
+              Contenido exclusivo, conversaciones reales y llamadas privadas con creadoras verificadas de Latinoamérica
+              y el mundo. Tú decides cuánto compartir. Nosotros ponemos la tecnología, los pagos y la discreción.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -455,7 +455,7 @@ export default function HomePage() {
                   "KYC, contrato y consentimiento incluidos",
                   "Panel de ingresos en tiempo real",
                   "Moderación y takedown 24/7",
-                  "Soporte humano en Guatemala",
+                  "Soporte humano en tu idioma",
                 ].map((t) => (
                   <li key={t} className="flex items-start gap-2.5 text-[13px] text-cream/80">
                     <span className="mt-0.5 grid h-4 w-4 shrink-0 place-items-center rounded-full bg-emerald-400/15 text-emerald-300">
@@ -571,7 +571,7 @@ export default function HomePage() {
               },
               {
                 q: "¿Es discreto?",
-                a: "Sí. Los cobros aparecen con un nombre comercial neutro, no mostramos tu actividad en redes y puedes usar un alias. La privacidad de los datos se trata según la ley guatemalteca.",
+                a: "Sí. Los cobros aparecen con un nombre comercial neutro, no mostramos tu actividad en redes y puedes usar un alias. La privacidad de los datos se trata según la ley aplicable y estándares internacionales.",
               },
               {
                 q: "¿Puedo vender servicios presenciales?",
@@ -606,7 +606,7 @@ export default function HomePage() {
             empieza <span className="italic text-rose">aquí</span>.
           </h2>
           <p className="relative mx-auto mt-5 max-w-md text-sm leading-relaxed text-cream/60">
-            Sé de las primeras creadoras o de los primeros fans. Cupos limitados para el lanzamiento en Guatemala.
+            Sé de las primeras creadoras o de los primeros fans. Cupos limitados para el lanzamiento en Latinoamérica.
           </p>
           <div className="relative mt-8 flex flex-wrap justify-center gap-3">
             <Link href="/registro" className="btn-primary">

@@ -25,5 +25,6 @@ await render("icon.html", "amy-icon-1024.png", 1024, 1024);
 await render("icon.html", "amy-icon-512.png", 512, 512);
 await render("wordmark.html", "amy-wordmark.png", 1600, 500);
 await render("wordmark-dark.html", "amy-wordmark-dark.png", 1600, 500);
+await render("icon-dark.html", "amy-icon-1024-dark.png", 1024, 1024);
 
 await browser.close();

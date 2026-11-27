@@ -48,7 +48,7 @@ export const creators: Creator[] = [
     name: "Camila Rivas",
     handle: "@camilarivas",
     tagline: "Lifestyle, viajes y noches sin filtro.",
-    bio: "De Guatemala para el mundo. Comparto mi día a día, sesiones privadas y llamadas para los que ya son de casa. Todo con respeto, todo con consentimiento.",
+    bio: "De Latinoamérica para el mundo. Comparto mi día a día, sesiones privadas y llamadas para los que ya son de casa. Todo con respeto, todo con consentimiento.",
     city: "Ciudad de Guatemala",
     tags: ["Lifestyle", "VIP", "Viajes"],
     initials: "CR",

@@ -70,7 +70,7 @@ export default async function LegalPage({ params }: { params: Promise<{ slug: st
             </div>
 
             <div className="mt-12 rounded-2xl border border-white/10 bg-surface/60 p-5 text-[12px] leading-relaxed text-muted">
-              ¿Dudas? Escríbenos a <span className="text-cream">amyoficialfan@gmail.com</span>. Respondemos en horario de Guatemala.
+              ¿Dudas? Escríbenos a <span className="text-cream">amyoficialfan@gmail.com</span>. Respondemos en horario local.
             </div>
           </article>
         </div>

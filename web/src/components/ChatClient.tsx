@@ -55,7 +55,7 @@ const starterMessages: Record<string, Message[]> = {
   c5: [
     { id: "i1", from: "creator", text: "Live el jueves, no faltes. Voy a estrenar una coreografía.", time: "11:40" },
     { id: "i2", from: "fan", text: "Ahí estaré. ¿A qué hora?", time: "11:44" },
-    { id: "i3", from: "creator", text: "8:00 p.m., hora de Guatemala. Te guardo lugar.", time: "11:45" },
+    { id: "i3", from: "creator", text: "8:00 p.m., hora local. Te guardo lugar.", time: "11:45" },
   ],
 };
 

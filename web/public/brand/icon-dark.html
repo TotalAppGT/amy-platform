@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+  html,body{margin:0;width:1024px;height:1024px;background:#08070B;overflow:hidden}
+  body{display:grid;place-items:center;font-family:Georgia,'Times New Roman',serif}
+  .wrap{position:relative;width:1024px;height:1024px;display:grid;place-items:center}
+  .diamond{position:absolute;width:600px;height:600px;transform:rotate(45deg);border-radius:132px;background:linear-gradient(135deg,#FF4D8D 0%,#C44DFF 52%,#E9C46A 100%);box-shadow:0 50px 140px rgba(255,77,141,.32), 0 0 0 1px rgba(255,255,255,.18) inset}
+  .inner{position:absolute;width:560px;height:560px;transform:rotate(45deg);border-radius:120px;border:2px solid rgba(255,255,255,.22);background:radial-gradient(circle at 30% 22%,rgba(255,255,255,.2),transparent 48%)}
+  .letter{position:relative;z-index:3;color:#fff;font-size:320px;line-height:1;font-weight:400;text-shadow:0 16px 40px rgba(8,7,11,.28);transform:translateY(-6px);letter-spacing:-.04em}
+  .dot{position:absolute;z-index:4;bottom:214px;width:18px;height:18px;border-radius:50%;background:#F5F1EA;opacity:.9}
+</style>
+</head>
+<body><div class="wrap"><div class="diamond"></div><div class="inner"></div><div class="letter">A</div><div class="dot"></div></div></body>
+</html>

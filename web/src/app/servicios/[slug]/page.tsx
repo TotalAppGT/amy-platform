@@ -141,7 +141,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                     <span key={m} className="chip !py-1 text-[10px]">{m}</span>
                   ))}
                 </div>
-                <p className="mt-2 text-[10px] text-muted">Disponibilidad mostrada en horario de Guatemala.</p>
+                <p className="mt-2 text-[10px] text-muted">Disponibilidad mostrada en horario local.</p>
               </div>
             </section>
 

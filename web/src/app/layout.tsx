@@ -19,12 +19,12 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "AMY — Contenido privado, chat y llamadas",
   description:
-    "La plataforma guatemalteca donde creadoras verificadas venden contenido, conversan y atienden llamadas privadas. Discreto, seguro y con pagos protegidos.",
+    "La plataforma donde creadoras verificadas venden contenido, conversan y atienden llamadas privadas. Discreto, seguro y con pagos protegidos.",
   metadataBase: new URL("https://amy.gt"),
   robots: { index: false, follow: false },
   openGraph: {
     title: "AMY — Tu lado más privado",
-    description: "Contenido exclusivo, chat en vivo y llamadas privadas con creadoras verificadas de Guatemala.",
+    description: "Contenido exclusivo, chat en vivo y llamadas privadas con creadoras verificadas de Latinoamérica y el mundo.",
     type: "website",
   },
 };
