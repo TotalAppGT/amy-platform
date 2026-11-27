@@ -2,7 +2,12 @@
 
 Plataforma tipo OnlyFans + reservas de servicios profesionales, hecha para revisar el look, los flujos y el modelo de negocio **antes** de comprar dominio o desplegar en Coolify.
 
-> Estado: **prototipo visual local**. Nada se ha subido a GitHub, Coolify ni a internet. Los datos son ficticios y los pagos no están conectados.
+> Estado: **prototipo desplegado en staging**. Está en Coolify/Vultr con HTTPS. Los datos siguen siendo ficticios y los pagos no están conectados.
+>
+> - **Staging:** https://amy.144-202-91-4.sslip.io
+> - **GitHub:** https://github.com/TotalAppGT/amy-platform
+> - **Coolify:** proyecto `AMY`, aplicación `amy-platform`
+> - **Logo:** `web/public/brand/` (`amy-icon-1024.png` para Recurrente, `amy-wordmark.png` para fondos oscuros)
 
 ---
 
