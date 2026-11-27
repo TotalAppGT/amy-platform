@@ -36,7 +36,7 @@ export default function PrivacyPage() {
 
         <div className="mt-10 grid gap-4 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="rounded-[24px] border border-white/[0.08] bg-surface/60 p-5">
-            <p className="flex items-center gap-2 text-sm font-semibold"><UserRound className="h-4 w-4 text-rose" /> Qué ve el público</p>
+            <h2 className="flex items-center gap-2 text-sm font-semibold"><UserRound className="h-4 w-4 text-rose" /> Qué ve el público</h2>
             <div className="mt-4 overflow-hidden rounded-xl border border-white/[0.07]">
               <div className="grid grid-cols-[1fr_1fr] border-b border-white/[0.07] bg-white/[0.03] px-3.5 py-2 text-[9px] uppercase tracking-[0.14em] text-muted">
                 <span>Público</span>
@@ -67,6 +67,7 @@ export default function PrivacyPage() {
 
         <section className="mt-12">
           <span className="eyebrow"><Sparkles className="h-3.5 w-3.5 text-gold" /> Cómo protegemos tus datos</span>
+          <h2 className="display mt-2 text-2xl sm:text-3xl">Privacidad por diseño.</h2>
           <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { icon: UserRound, title: "Alias por defecto", text: "No pedimos tu nombre real para crear la cuenta. Solo lo pedimos en KYC si vas a vender o cobrar." },
@@ -88,9 +89,9 @@ export default function PrivacyPage() {
         </section>
 
         <section className="mt-10 rounded-[24px] border border-emerald-400/15 bg-emerald-400/[0.04] p-5 sm:p-7">
-          <p className="flex items-center gap-2 text-sm font-semibold text-emerald-300">
+          <h2 className="flex items-center gap-2 text-sm font-semibold text-emerald-300">
             <ShieldCheck className="h-4 w-4" /> La privacidad es ley en AMY
-          </p>
+          </h2>
           <p className="mt-2 max-w-3xl text-[11px] leading-relaxed text-cream/65">
             La intimidad es un derecho fundamental y un compromiso contractual con cada usuario. Para
             usuarios internacionales aplicamos estándares equivalentes al GDPR. No pedimos más datos de los necesarios, no

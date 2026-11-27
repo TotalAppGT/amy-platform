@@ -15,7 +15,7 @@ export default function AuthShell({
   footer: React.ReactNode;
 }) {
   return (
-    <div className="grid min-h-screen lg:grid-cols-2">
+    <main className="grid min-h-screen lg:grid-cols-2">
       <div className="flex flex-col px-5 py-6 sm:px-10 lg:px-16">
         <div className="flex items-center justify-between">
           <Logo />
@@ -88,6 +88,6 @@ export default function AuthShell({
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

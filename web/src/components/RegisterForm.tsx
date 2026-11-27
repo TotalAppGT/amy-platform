@@ -162,7 +162,7 @@ export default function RegisterForm() {
             type="button"
             aria-label={show ? "Ocultar contraseña" : "Mostrar contraseña"}
             onClick={() => setShow((v) => !v)}
-            className="absolute right-3.5 top-1/2 -translate-y-1/2 text-muted"
+            className="absolute right-1.5 top-1/2 grid h-9 w-9 -translate-y-1/2 place-items-center text-muted"
           >
             {show ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
           </button>
