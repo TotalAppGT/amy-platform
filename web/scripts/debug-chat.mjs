@@ -1,0 +1,13 @@
+import puppeteer from "puppeteer-core";
+const browser = await puppeteer.launch({executablePath:"C:/Program Files/Google/Chrome/Application/chrome.exe",headless:"new",args:["--no-sandbox"]});
+const page = await browser.newPage();
+await page.setViewport({width:1440,height:900});
+await page.goto("http://localhost:3100/",{waitUntil:"networkidle0"});
+await page.evaluate(()=>localStorage.setItem("amy_age_ok","1"));
+await page.goto("http://localhost:3100/chat",{waitUntil:"networkidle0"});
+const before = await page.evaluate(()=>({header:document.querySelector('section header')?.innerText, buttons:[...document.querySelectorAll('button')].map(b=>b.innerText.slice(0,30)).filter(Boolean).slice(0,20)}));
+const clicked = await page.evaluate(()=>{const b=[...document.querySelectorAll('button')].find(x=>x.textContent?.includes('Valeria Soto')); if(b){b.click();return b.innerText.slice(0,80);} return null;});
+await new Promise(r=>setTimeout(r,500));
+const after = await page.evaluate(()=>({header:document.querySelector('section header')?.innerText, right:document.querySelector('aside')?.innerText.slice(0,200)}));
+console.log(JSON.stringify({before,clicked,after},null,2));
+await browser.close();

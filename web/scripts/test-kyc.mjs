@@ -1,0 +1,12 @@
+import puppeteer from "puppeteer-core";
+const b = await puppeteer.launch({executablePath:"C:/Program Files/Google/Chrome/Application/chrome.exe",headless:"new",args:["--no-sandbox"]});
+const p = await b.newPage();
+await p.goto("http://localhost:3100/admin",{waitUntil:"networkidle0"});
+await p.evaluate(()=>localStorage.setItem("amy_age_ok","1"));
+await p.reload({waitUntil:"networkidle0"});
+const before = await p.evaluate(()=>document.querySelector("#solicitudes")?.innerText);
+const clicked = await p.evaluate(()=>{const s=document.querySelector("#solicitudes");const btn=[...(s?.querySelectorAll("button")||[])].find(x=>x.textContent?.includes("Aprobar")); if(btn){btn.click();return true;} return false;});
+await new Promise(r=>setTimeout(r,300));
+const after = await p.evaluate(()=>document.querySelector("#solicitudes")?.innerText);
+console.log(JSON.stringify({clicked, before:before?.slice(0,160), after:after?.slice(0,200)},null,2));
+await b.close();

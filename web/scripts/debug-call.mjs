@@ -1,0 +1,11 @@
+import puppeteer from "puppeteer-core";
+const b = await puppeteer.launch({executablePath:"C:/Program Files/Google/Chrome/Application/chrome.exe",headless:"new",args:["--no-sandbox"]});
+const p = await b.newPage(); await p.setViewport({width:1440,height:900});
+await p.goto("http://localhost:3100/",{waitUntil:"networkidle0"}); await p.evaluate(()=>localStorage.setItem("amy_age_ok","1"));
+await p.goto("http://localhost:3100/chat",{waitUntil:"networkidle0"});
+const labels = await p.evaluate(()=>[...document.querySelectorAll('button')].map(x=>x.getAttribute('aria-label')).filter(Boolean));
+const clicked = await p.evaluate(()=>{const b=document.querySelector('button[aria-label="Videollamada"]'); if(b){b.click();return true;} return false;});
+await new Promise(r=>setTimeout(r,600));
+const text = await p.evaluate(()=>document.body.innerText.slice(-800));
+console.log(JSON.stringify({labels,clicked,text},null,2));
+await b.close();

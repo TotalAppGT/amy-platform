@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fanvela — opciones de marca</title>
+<style>
+  :root{
+    --ink:#08070b; --surface:#100e15; --line:rgba(255,255,255,.09);
+    --cream:#f5f1ea; --muted:#a39dae; --rose:#ff4d8d; --gold:#e9c46a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:
+    radial-gradient(900px 500px at 85% -10%,rgba(255,77,141,.16),transparent 60%),
+    radial-gradient(700px 400px at 8% 10%,rgba(183,156,255,.1),transparent 60%),
+    var(--ink);
+    color:var(--cream);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
+  .wrap{max-width:1180px;margin:0 auto;padding:56px 24px 80px}
+  .eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:8px}
+  .dot{width:5px;height:5px;border-radius:50%;background:var(--rose)}
+  h1{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(38px,5vw,64px);line-height:1.02;letter-spacing:-.02em;margin:14px 0 12px}
+  h1 em{color:var(--rose)}
+  .sub{max-width:620px;color:var(--muted);font-size:14px;line-height:1.7;margin:0}
+  .grid{display:grid;gap:16px;margin-top:36px;grid-template-columns:repeat(2,minmax(0,1fr))}
+  @media(max-width:820px){.grid{grid-template-columns:1fr}}
+  .card{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:26px;background:linear-gradient(160deg,rgba(255,255,255,.04),rgba(16,14,21,.9));padding:26px;transition:.3s}
+  .card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.2)}
+  .featured{grid-column:1/-1;background:linear-gradient(120deg,rgba(255,77,141,.14),rgba(16,14,21,.95) 45%,rgba(183,156,255,.12))}
+  .glow{position:absolute;right:-80px;top:-100px;width:280px;height:280px;border-radius:50%;background:rgba(255,77,141,.18);filter:blur(50px)}
+  .row{display:flex;align-items:center;justify-content:space-between;gap:20px;position:relative}
+  .logo{display:flex;align-items:center;gap:12px}
+  .mark{position:relative;width:44px;height:44px;display:grid;place-items:center}
+  .mark:before{content:"";position:absolute;inset:0;transform:rotate(45deg);border-radius:12px;background:linear-gradient(135deg,var(--rose),#c44dff 55%,var(--gold))}
+  .mark:after{content:"";position:absolute;inset:4px;transform:rotate(45deg);border-radius:9px;background:#0b0910}
+  .mark span{position:relative;z-index:2;font-family:Georgia,serif;font-size:17px;color:#fff}
+  .word{font-size:20px;letter-spacing:.22em;font-weight:600}
+  .word small{display:block;font-size:8px;letter-spacing:.3em;color:var(--muted);font-weight:500;margin-top:3px}
+  .badge{font-size:9px;text-transform:uppercase;letter-spacing:.16em;color:var(--gold);border:1px solid rgba(233,196,106,.3);background:rgba(233,196,106,.08);padding:7px 10px;border-radius:999px;white-space:nowrap}
+  .tag{font-family:Georgia,serif;font-size:clamp(24px,3vw,36px);line-height:1.1;margin:26px 0 8px;position:relative}
+  .tag em{color:var(--rose)}
+  .desc{color:var(--muted);font-size:12.5px;line-height:1.65;margin:0;position:relative;max-width:520px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px;position:relative}
+  .chip{font-size:10px;color:#cfc8d8;border:1px solid var(--line);background:rgba(255,255,255,.03);padding:5px 9px;border-radius:999px}
+  .chip.ok{color:#8df0c9;border-color:rgba(80,220,170,.25);background:rgba(80,220,170,.06)}
+  .chip.no{color:#ff9db4;border-color:rgba(255,77,141,.25);background:rgba(255,77,141,.06)}
+  .preview{margin-top:24px;border:1px solid var(--line);border-radius:16px;background:rgba(0,0,0,.25);padding:12px 16px;display:flex;align-items:center;gap:18px;position:relative}
+  .preview .word{font-size:12px;letter-spacing:.2em}
+  .preview nav{display:flex;gap:14px;font-size:10px;color:var(--muted);margin-left:auto}
+  .preview .btn{background:var(--rose);color:#fff;font-size:9px;padding:7px 11px;border-radius:999px;font-weight:600}
+  .note{margin-top:28px;border:1px solid var(--line);border-radius:18px;padding:18px 20px;color:var(--muted);font-size:11.5px;line-height:1.7;background:rgba(255,255,255,.02)}
+  .note b{color:var(--cream)}
+  .small{font-size:10px;color:#6f687c;margin-top:18px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow"><span class="dot"></span> Identidad · opciones con “Fan”</div>
+  <h1>Que se sienta <em>fan</em>.<br>Que se vea premium.</h1>
+  <p class="sub">Cuatro rutas de nombre que conservan la suavidad de VELA y hacen explícita la relación con los fans. La recomendada es <b>Fanvela</b>: conserva lo que ya te gusta y añade el concepto.</p>
+
+  <div class="grid">
+    <article class="card featured">
+      <div class="glow"></div>
+      <div class="row">
+        <div class="logo">
+          <div class="mark"><span>F</span></div>
+          <div class="word">FANVELA<small>CONTENIDO · CHAT · SERVICIOS</small></div>
+        </div>
+        <span class="badge">Recomendada</span>
+      </div>
+      <h2 class="tag">Tu lado <em>fan</em>, más cerca.</h2>
+      <p class="desc">Fan + VELA. Conserva la elegancia y el brillo de VELA, pero deja claro que es una plataforma de fans. Suena suave, se pronuncia fácil en español e inglés y funciona para contenido, chat, llamadas y la línea de bienestar.</p>
+      <div class="chips">
+        <span class="chip ok">fanvela.gt libre*</span>
+        <span class="chip ok">fanvela.app libre*</span>
+        <span class="chip ok">fanvela.co libre*</span>
+        <span class="chip ok">getfanvela.com libre*</span>
+        <span class="chip no">fanvela.com registrado</span>
+      </div>
+      <div class="preview">
+        <div class="word">FANVELA</div>
+        <nav><span>Explorar</span><span>Servicios</span><span>Chat</span></nav>
+        <span class="btn">Crear cuenta</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="row">
+        <div class="logo">
+          <div class="mark"><span>F</span></div>
+          <div class="word">FANMORA<small>FAN + AMOR</small></div>
+        </div>
+      </div>
+      <h2 class="tag">Cerca de ti, <em>sin prisa</em>.</h2>
+      <p class="desc">Fan + amor. Es la opción más cálida y romántica; funciona muy bien para chat, novia virtual y contenido de pareja. Para masajes suena a bienestar, no a spa clínico.</p>
+      <div class="chips">
+        <span class="chip ok">fanmora.gt libre*</span>
+        <span class="chip ok">fanmora.app libre*</span>
+        <span class="chip ok">fanmora.co libre*</span>
+        <span class="chip no">fanmora.com registrado</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="row">
+        <div class="logo">
+          <div class="mark"><span>F</span></div>
+          <div class="word">FANESSA<small>FAN + FINESSE</small></div>
+        </div>
+      </div>
+      <h2 class="tag">Tu espacio <em>privado</em>.</h2>
+      <p class="desc">Fan + finesse. Suena premium, femenina y discreta; ideal si quieres un posicionamiento más exclusivo y menos “red social”. El dominio .com está tomado, pero .gt y .app están libres.</p>
+      <div class="chips">
+        <span class="chip ok">fanessa.gt libre*</span>
+        <span class="chip ok">fanessa.app libre*</span>
+        <span class="chip no">fanessa.com registrado</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="row">
+        <div class="logo">
+          <div class="mark"><span>F</span></div>
+          <div class="word">FANELLE<small>FAN + ELLE</small></div>
+        </div>
+      </div>
+      <h2 class="tag">Ella, <em>más cerca</em>.</h2>
+      <p class="desc">Fan + elle. Corto, chic y muy femenino. “Elle” aporta el lado editorial y de moda; encaja con boudoir, fotografía y wellness. Menos obvio que Fanvela, pero igual de suave.</p>
+      <div class="chips">
+        <span class="chip ok">fanelle.gt libre*</span>
+        <span class="chip ok">fanelle.app libre*</span>
+        <span class="chip no">fanelle.com registrado</span>
+      </div>
+    </article>
+  </div>
+
+  <div class="note">
+    <b>Por qué Fanvela:</b> es el único que conserva VELA (lo que ya te gusta), añade “Fan” sin sonar a club de fans, y tiene dominio .gt/.app/.co disponibles. La línea de servicios puede llamarse <b>Fanvela Care</b> y el contenido <b>Fanvela Studio</b>. Si quieres una marca más romántica, <b>Fanmora</b>; si quieres más premium, <b>Fanessa</b>.
+    <br><br>
+    *Disponibilidad preliminar por DNS el 26/11/2026. Confirma en <b>gt</b> y en el RPI antes de comprar. Fanova ya existe como plataforma LatAm: evita ese nombre.
+  </div>
+  <p class="small">Prototipo de marca · VELA → Fanvela · datos ficticios</p>
+</div>
+</body>
+</html>

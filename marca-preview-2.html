@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VELA — nuevas rutas de marca sin “fan”</title>
+<style>
+  :root{--ink:#08070b;--surface:#100e15;--line:rgba(255,255,255,.09);--cream:#f5f1ea;--muted:#a39dae;--rose:#ff4d8d;--gold:#e9c46a}
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(900px 500px at 85% -10%,rgba(255,77,141,.15),transparent 60%),radial-gradient(700px 400px at 8% 10%,rgba(183,156,255,.1),transparent 60%),var(--ink);color:var(--cream);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
+  .wrap{max-width:1180px;margin:0 auto;padding:56px 24px 80px}
+  .eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:8px}
+  .dot{width:5px;height:5px;border-radius:50%;background:var(--rose)}
+  h1{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(38px,5vw,64px);line-height:1.02;letter-spacing:-.02em;margin:14px 0 12px}
+  h1 em{color:var(--rose)}
+  .sub{max-width:640px;color:var(--muted);font-size:14px;line-height:1.7;margin:0}
+  .grid{display:grid;gap:16px;margin-top:36px;grid-template-columns:repeat(2,minmax(0,1fr))}
+  @media(max-width:820px){.grid{grid-template-columns:1fr}}
+  .card{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:26px;background:linear-gradient(160deg,rgba(255,255,255,.04),rgba(16,14,21,.9));padding:26px;transition:.3s}
+  .card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.2)}
+  .featured{grid-column:1/-1;background:linear-gradient(120deg,rgba(255,77,141,.13),rgba(16,14,21,.95) 45%,rgba(183,156,255,.11))}
+  .glow{position:absolute;right:-80px;top:-100px;width:280px;height:280px;border-radius:50%;background:rgba(255,77,141,.18);filter:blur(50px)}
+  .row{display:flex;align-items:center;justify-content:space-between;gap:20px;position:relative}
+  .logo{display:flex;align-items:center;gap:12px}
+  .mark{position:relative;width:44px;height:44px;display:grid;place-items:center}
+  .mark:before{content:"";position:absolute;inset:0;transform:rotate(45deg);border-radius:12px;background:linear-gradient(135deg,var(--rose),#c44dff 55%,var(--gold))}
+  .mark:after{content:"";position:absolute;inset:4px;transform:rotate(45deg);border-radius:9px;background:#0b0910}
+  .mark span{position:relative;z-index:2;font-family:Georgia,serif;font-size:17px;color:#fff}
+  .word{font-size:20px;letter-spacing:.22em;font-weight:600}
+  .word small{display:block;font-size:8px;letter-spacing:.3em;color:var(--muted);font-weight:500;margin-top:3px}
+  .badge{font-size:9px;text-transform:uppercase;letter-spacing:.16em;color:var(--gold);border:1px solid rgba(233,196,106,.3);background:rgba(233,196,106,.08);padding:7px 10px;border-radius:999px;white-space:nowrap}
+  .tag{font-family:Georgia,serif;font-size:clamp(24px,3vw,36px);line-height:1.1;margin:26px 0 8px;position:relative}
+  .tag em{color:var(--rose)}
+  .desc{color:var(--muted);font-size:12.5px;line-height:1.65;margin:0;position:relative;max-width:560px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px;position:relative}
+  .chip{font-size:10px;color:#cfc8d8;border:1px solid var(--line);background:rgba(255,255,255,.03);padding:5px 9px;border-radius:999px}
+  .chip.ok{color:#8df0c9;border-color:rgba(80,220,170,.25);background:rgba(80,220,170,.06)}
+  .chip.no{color:#ff9db4;border-color:rgba(255,77,141,.25);background:rgba(255,77,141,.06)}
+  .preview{margin-top:24px;border:1px solid var(--line);border-radius:16px;background:rgba(0,0,0,.25);padding:12px 16px;display:flex;align-items:center;gap:18px;position:relative}
+  .preview .word{font-size:12px;letter-spacing:.2em}
+  .preview nav{display:flex;gap:14px;font-size:10px;color:var(--muted);margin-left:auto}
+  .preview .btn{background:var(--rose);color:#fff;font-size:9px;padding:7px 11px;border-radius:999px;font-weight:600}
+  .note{margin-top:28px;border:1px solid var(--line);border-radius:18px;padding:18px 20px;color:var(--muted);font-size:11.5px;line-height:1.7;background:rgba(255,255,255,.02)}
+  .note b{color:var(--cream)}
+  .small{font-size:10px;color:#6f687c;margin-top:18px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow"><span class="dot"></span> Identidad · sin “fan” · competencia directa</div>
+  <h1>Tu marca, sin <em>explicaciones</em>.</h1>
+  <p class="sub">Cuatro rutas para competir con OnlyFans, Fansly y Fanvue sin usar “fan”: cortas, suaves, memorables y con espacio para contenido, llamadas y masajes profesionales.</p>
+
+  <div class="grid">
+    <article class="card featured">
+      <div class="glow"></div>
+      <div class="row">
+        <div class="logo">
+          <div class="mark"><span>V</span></div>
+          <div class="word">VELORA<small>CONTENIDO · CHAT · BIENESTAR</small></div>
+        </div>
+        <span class="badge">Recomendada</span>
+      </div>
+      <h2 class="tag">Cerca, <em>sin ruido</em>.</h2>
+      <p class="desc">Terciopelo + aura. Es la evolución natural de VELA: conserva la V y la elegancia, pero suena más propia, más premium y más internacional. Funciona para contenido, llamadas y la línea de masajes/spa sin sonar explícita. Es la que veo más defendible como marca y la más fácil de pronunciar en español e inglés.</p>
+      <div class="chips">
+        <span class="chip ok">velora.gt libre*</span>
+        <span class="chip ok">velora.co libre*</span>
+        <span class="chip no">velora.com registrado</span>
+        <span class="chip no">velora.app registrado</span>
+      </div>
+      <div class="preview">
+        <div class="word">VELORA</div>
+        <nav><span>Explorar</span><span>Servicios</span><span>Chat</span></nav>
+        <span class="btn">Crear cuenta</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="row">
+        <div class="logo"><div class="mark"><span>S</span></div><div class="word">SELENE<small>LUNA · NOCHE · DESEO</small></div></div>
+      </div>
+      <h2 class="tag">Después de la <em>noche</em>.</h2>
+      <p class="desc">La diosa de la luna. Es la opción más sensual y misteriosa; compite directo con el imaginario de las plataformas de contenido premium. También funciona para wellness (calma, ciclos, descanso). Más adulta, menos “app”.</p>
+      <div class="chips">
+        <span class="chip ok">selene.gt libre*</span>
+        <span class="chip ok">selene.club libre*</span>
+        <span class="chip no">selene.com registrado</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="row">
+        <div class="logo"><div class="mark"><span>N</span></div><div class="word">NÁCAR<small>PIEL · BRILLO · LUJO</small></div></div>
+      </div>
+      <h2 class="tag">Tu <em>brillo</em> propio.</h2>
+      <p class="desc">Nácar es la madre del nácar: lujo, piel, luz. Es la más sofisticada y la menos obvia; se siente como una casa de belleza y bienestar, pero puede albergar contenido y llamadas. Muy buena si quieres un posicionamiento aspiracional.</p>
+      <div class="chips">
+        <span class="chip ok">nacar.gt libre*</span>
+        <span class="chip no">nacar.com registrado</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="row">
+        <div class="logo"><div class="mark"><span>M</span></div><div class="word">MAREA<small>OLA · RITMO · CUERPO</small></div></div>
+      </div>
+      <h2 class="tag">A tu <em>ritmo</em>.</h2>
+      <p class="desc">Marea es corta, sensual y muy latina. Evoca movimiento, piel y calma; funciona para chat, llamadas y masajes. Es la más fácil de recordar y de escribir, pero también la más común: hay que construirle un sistema visual fuerte.</p>
+      <div class="chips">
+        <span class="chip ok">marea.gt libre*</span>
+        <span class="chip ok">marea.app libre*</span>
+        <span class="chip no">marea.com registrado</span>
+      </div>
+    </article>
+  </div>
+
+  <div class="note">
+    <b>Mi orden:</b> Velora (marca + legado VELA + premium) → Selene (más sensual y competitiva) → Nácar (más lujo/wellness) → Marea (más simple y latina).
+    <br><br>
+    *Disponibilidad preliminar por DNS el 26/11/2026. Confirma en <b>gt</b> y en el RPI. Los .com exactos están tomados; se puede usar .gt + .co / .club o intentar comprar el .com.
+  </div>
+  <p class="small">Prototipo de marca · VELA → Velora · datos ficticios</p>
+</div>
+</body>
+</html>
